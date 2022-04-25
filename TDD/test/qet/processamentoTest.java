@@ -66,6 +66,7 @@ public class processamentoTest {
         assertEquals(fatura1.getPaga(), true);
     }
     
+    
      // segundo caso 
     @Test
     public void testPaga2(){
@@ -81,5 +82,4 @@ public class processamentoTest {
     @Test
     public void testQtdBoletos2(){
         assertTrue(process2.qtdBoletos() == 3);
-
 }
