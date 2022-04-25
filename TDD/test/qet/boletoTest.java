@@ -15,26 +15,11 @@ public class boletoTest {
         boleto1 = new boleto(1111, "20/10/2022", 800.0);
     }
     
-    @Test
+     @Test
     public void testCriaBoleto(){
         this.testData();
         this.testPago();
         this.testCodigo();
-    }
-    
-    @Test
-    public void testData(){
-        assertEquals("20/10/2022", boleto1.getData());
-    }
-    
-    @Test
-    public void testPago(){
-        assertTrue(800.0 == boleto1.getPago());
-    }
-    
-    @Test
-    public void testCodigo(){
-        assertTrue(1111 == boleto1.getCodigo());
     }
     
 }
