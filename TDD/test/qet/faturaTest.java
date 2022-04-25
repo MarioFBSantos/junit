@@ -23,5 +23,4 @@ public class faturaTest {
        assertEquals(false, fatura1.getPaga());
     }
     
-    
 }
