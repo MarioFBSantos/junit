@@ -82,4 +82,23 @@ public class processamentoTest {
     @Test
     public void testQtdBoletos2(){
         assertTrue(process2.qtdBoletos() == 3);
+    }
+    
+  // terceiro caso
+    
+     @Test
+    public void testPaga3(){
+        assertTrue(process3.getTotalPago() <= fatura3.getTotal());
+    }
+    
+    @Test 
+    public void testSetStatus3(){
+        process.setFaturaStatus(fatura3);
+        assertEquals(fatura3.getPaga(), true);
+    }
+    
+    @Test
+    public void testQtdBoletos3(){
+        assertTrue(process3.qtdBoletos() == 2);
+    } 
 }
