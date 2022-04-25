@@ -101,4 +101,12 @@ public class processamentoTest {
     public void testQtdBoletos3(){
         assertTrue(process3.qtdBoletos() == 2);
     } 
+    
+        // teste a parte
+    
+    @Test
+    public void testEsvazia(){
+        process3.esvazia();
+        assertTrue(process3.qtdBoletos() == 0);
+    }
 }
