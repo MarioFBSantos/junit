@@ -15,8 +15,20 @@ public class boleto {
       this.pago = pago;
     }
     
+    public void setData(String data){
+        this.data = data;
+    }
+    
+    public void setPago(double pago){
+        this.pago = pago;
+    }
+    
     public String getData(){
         return data;
+    }
+    
+    public double getPago(){
+        return pago;
     }
     
 }
