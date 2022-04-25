@@ -50,10 +50,9 @@ public class processamentoTest {
         
     }
     // primeiro caso 
-    @Test 
-    public void testSetStatus(){
-        process.setFaturaStatus(fatura1);
-        assertEquals(fatura1.getPaga(), true);
+    @Test
+    public void testQtdBoletos(){
+        assertTrue(process.qtdBoletos() == 3);
     }
 
 }
