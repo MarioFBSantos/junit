@@ -16,4 +16,15 @@ public class processamento {
         return pagamento.size();
     }
     
+    public double getTotalPago(){
+        double total = 0.0;
+        
+        for(Iterator i = pagamento.iterator(); i.hasNext();){
+             boleto item = (boleto) i.next();
+              total += item.getPago();
+        }
+        
+        return total;
+    }
+    
 }
