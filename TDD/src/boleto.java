@@ -23,12 +23,20 @@ public class boleto {
         this.pago = pago;
     }
     
+    public void setCodigo(double codigo){
+        this.codigo = codigo;
+    }
+    
     public String getData(){
         return data;
     }
     
     public double getPago(){
         return pago;
+    }
+    
+    public double getCodigo(){
+        return codigo;
     }
     
 }
