@@ -25,4 +25,9 @@ public class boletoTest {
         assertTrue(800.0 == boleto1.getPago());
     }
     
+    @Test
+    public void testCodigo(){
+        assertTrue(1111 == boleto1.getCodigo());
+    }
+    
 }
