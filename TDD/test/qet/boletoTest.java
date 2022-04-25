@@ -20,4 +20,9 @@ public class boletoTest {
         assertEquals("20/10/2022", boleto1.getData());
     }
     
+    @Test
+    public void testPago(){
+        assertTrue(800.0 == boleto1.getPago());
+    }
+    
 }
