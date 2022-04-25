@@ -27,4 +27,9 @@ public class processamento {
         return total;
     }
     
+    public void setFaturaStatus(fatura item){
+        if(this.getTotalPago() >= item.getTotal()){
+            item.setPaga(true);
+        }
+    }
 }
