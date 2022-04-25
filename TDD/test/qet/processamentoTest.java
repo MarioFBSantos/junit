@@ -65,5 +65,21 @@ public class processamentoTest {
         process.setFaturaStatus(fatura1);
         assertEquals(fatura1.getPaga(), true);
     }
+    
+     // segundo caso 
+    @Test
+    public void testPaga2(){
+        assertTrue(process2.getTotalPago() >= fatura2.getTotal());
+    }
+    
+    @Test 
+    public void testSetStatus2(){
+        process.setFaturaStatus(fatura2);
+        assertEquals(fatura2.getPaga(), true);
+    }
+    
+    @Test
+    public void testQtdBoletos2(){
+        assertTrue(process2.qtdBoletos() == 3);
 
 }
