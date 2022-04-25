@@ -42,6 +42,27 @@ public class processamentoTest {
         process.addBoleto(boleto2);
         process.addBoleto(boleto3);
         
+                process = new processamento();
+        process.addBoleto(boleto1);
+        process.addBoleto(boleto2);
+        process.addBoleto(boleto3);
+        
+        boleto4 = new boleto(4444,"20/10/2022", 1000.0);
+        boleto5 = new boleto(5555,"20/10/2022", 500.0);
+        boleto6 = new boleto(6666, "20/10/2022", 250.0);
+        
+        process2 = new processamento();
+        process2.addBoleto(boleto4);
+        process2.addBoleto(boleto5);
+        process2.addBoleto(boleto6);
+        
+        boleto7 = new boleto(7777, "22/10/2022", 500.0);
+        boleto8 = new boleto(8888,"22/10/2022", 400.0);
+        
+        process3 = new processamento();
+        process3.addBoleto(boleto7);
+        process3.addBoleto(boleto8);
+        
     }
     
     @Test
