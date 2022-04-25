@@ -54,5 +54,10 @@ public class processamentoTest {
     public void testQtdBoletos(){
         assertTrue(process.qtdBoletos() == 3);
     }
+     
+    @Test
+    public void testPaga(){
+        assertTrue(process.getTotalPago() >= fatura1.getTotal());
+    }
 
 }
