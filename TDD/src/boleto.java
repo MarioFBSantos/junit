@@ -19,25 +19,5 @@ public class boleto {
         return data;
     }
     
-    public double getPago(){
-        return pago;
-    }
-    
-    public double getCodigo(){
-        return codigo;
-    }
-    
-    public void setData(String data){
-        this.data = data;
-    }
-    
-    public void setPago(double pago){
-        this.pago = pago;
-    }
-        
-    public void setCodigo(double codigo){
-        this.codigo = codigo;
-    }
-    
 }
 
